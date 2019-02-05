@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="crevisoft.list">
+      <field name="name">crevisoft list</field>
+      <field name="model">crevisoft.crevisoft</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="crevisoft.action_window">
+      <field name="name">crevisoft window</field>
+      <field name="res_model">crevisoft.crevisoft</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="crevisoft.action_server">
+      <field name="name">crevisoft server</field>
+      <field name="model_id" ref="model_crevisoft_crevisoft"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="crevisoft" id="crevisoft.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="crevisoft.menu_1" parent="crevisoft.menu_root"/>
+    <menuitem name="Menu 2" id="crevisoft.menu_2" parent="crevisoft.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="crevisoft.menu_1_list" parent="crevisoft.menu_1"
+              action="crevisoft.action_window"/>
+    <menuitem name="Server to list" id="crevisoft" parent="crevisoft.menu_2"
+              action="crevisoft.action_server"/>
+    -->
+  </data>
+</odoo>
